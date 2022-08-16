@@ -1,0 +1,31 @@
+.addTask {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .task {
+    width: 500px;
+    display: flex;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .task button {
+    width: auto;
+    height: 20px;
+    margin-left: 5px;
+    text-align: center;
+  }
