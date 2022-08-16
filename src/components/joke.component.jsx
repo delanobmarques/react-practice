@@ -20,7 +20,6 @@ function Joke() {
 
   return (
     <>
-        <hr style={{ color:"gray", width:"50%"}}></hr>
         <h1>Joke</h1>
         <button onClick={fetchData}>Get new Joke</button>
         <h3 style={{padding:"1rem"}}>Category: {joke.category}</h3>

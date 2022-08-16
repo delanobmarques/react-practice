@@ -37,7 +37,7 @@ const TaskList = () => {
     
     return (
         <>
-            <hr style={{ color:"gray", width:"50%"}}></hr>
+            <h1>Task List</h1>
             <div className="addTask">
                 <input onChange={handleChange} />
                 <button onClick={addTask}> Add Task</button>

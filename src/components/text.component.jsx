@@ -1,7 +1,7 @@
-import React from 'react'
 import { useState, useEffect } from 'react';
 
 const Text = () => {
+    const [showText, setShowText] = useState(false);
     const [text, setText] = useState('');
 
     useEffect(() => {
@@ -20,17 +20,28 @@ const Text = () => {
 
   return (
     <>
-        <hr style={{ color:"gray", width:"50%"}}></hr>
-        <input 
-            type="text" 
-            onChange={(e) => {
-                setText(e.target.value)
-            }}  
-            value={text}      
-        />
-        <h2 className='text'>{ text }</h2>
+        <h1 className="header">Show/ Hide Text</h1>
+        <button 
+            onClick={() => {
+                setShowText(!showText)
+            }}
+        >
+            Show/Hide Text
+        </button>
+        { showText &&   
+            <>
+                <input 
+                    type="text" 
+                    onChange={(e) => {
+                        setText(e.target.value)
+                    }}  
+                    value={text}      
+                />
+                <h2 className='text'>{ text }</h2>
+            </>
+        }
     </>
   )
 }
 
-export default Text
+export default Text;

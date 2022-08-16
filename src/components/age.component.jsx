@@ -18,7 +18,6 @@ const Age = () => {
 
   return (
     <>
-        <hr style={{ color:"gray", width:"50%"}}></hr>
         <h1>Age</h1>
         <h3>{ age }</h3>
         <button onClick={increaseAge}>

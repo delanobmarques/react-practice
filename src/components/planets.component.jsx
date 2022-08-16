@@ -15,8 +15,6 @@ const Planets = () => {
     
   return (
     <>
-        <hr style={{ color:"gray", width:"50%"}}></hr>
-
         <h1>Planets</h1>
         
         <button
