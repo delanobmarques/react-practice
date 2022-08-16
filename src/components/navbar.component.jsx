@@ -10,6 +10,7 @@ function Navbar() {
         <Link className='navbar__item' to="/planets">Planets</Link>        
         <Link className='navbar__item' to="/tasklist">Task List</Link>        
         <Link className='navbar__item' to="/text">Text</Link>        
+        <Link className='navbar__item' to="/profile">Profile</Link>       
     </header>
   )
 }
