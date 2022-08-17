@@ -5,7 +5,7 @@ import Axios from "axios";
 function Joke() {
     const [joke, setJoke] = useState({});
     // const URL = `https://api.agify.io/?name=delano`;        
-    const URL = `https://v2.jokeapi.dev/joke/Any`;
+    const URL = `https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit`;
 
     const fetchData = () => {
         Axios.get(URL)
