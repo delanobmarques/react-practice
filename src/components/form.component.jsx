@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"; // custom hook for managing forms
 import * as yup from "yup"; //using yup to validate form entries
 import { yupResolver } from "@hookform/resolvers/yup";
 import "./form.styles.css";
@@ -23,6 +23,7 @@ const Form = () => {
 
   return (
     <form className="form" onSubmit={ handleSubmit(onSubmit)}>
+        <p style={{marginBottom:"1rem"}}>UseForm custom hook, and form validation with yup example</p>
         <input type="text" placeholder="Full Name..." {...register("fullName")}/>
         <p>{ errors.fullName?.message }</p>
         <input type="text" placeholder="Email..." {...register("email")} />

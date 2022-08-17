@@ -16,7 +16,8 @@ const Planets = () => {
   return (
     <>
         <h1>Planets</h1>
-        
+        <p style={{marginBottom:"1rem"}}>UseState Hook example</p>
+
         <button
             onClick={ () => { 
                 setTextColor(textColor === "black"?"red":"black") 

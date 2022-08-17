@@ -18,6 +18,7 @@ const Excuse = () => {
     
     return (
         <>
+            <p style={{marginBottom:"1rem"}}>UseQuery Hook example</p>
             <h2>Category: { data.category } </h2>
             <h3 style={{padding:"1rem"}}>{data.excuse}</h3>
             <div style={{padding:"1rem"}}>{isFetching ? "Updating..." : ""}</div>

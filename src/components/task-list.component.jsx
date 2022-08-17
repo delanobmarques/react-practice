@@ -38,6 +38,7 @@ const TaskList = () => {
     return (
         <>
             <h1>Task List</h1>
+            <p>UseState Hook and controlled component example</p>
             <div className="addTask">
                 <input onChange={handleChange} />
                 <button onClick={addTask}> Add Task</button>

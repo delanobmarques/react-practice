@@ -4,9 +4,7 @@ import Axios from "axios";
 
 function Joke() {
     const [joke, setJoke] = useState({});
-    // const URL = `https://api.agify.io/?name=delano`;
-    // const URL = `https://catfact.ninja/fact`;
-    // const URL = `https://excuser.herokuapp.com/v1/excuse`;
+    // const URL = `https://api.agify.io/?name=delano`;        
     const URL = `https://v2.jokeapi.dev/joke/Any`;
 
     const fetchData = () => {
@@ -21,6 +19,7 @@ function Joke() {
   return (
     <>
         <h1>Joke</h1>
+        <p style={{marginBottom:"1rem"}}>UseEffect Hook, and fetch data with axios example</p>
         <button onClick={fetchData}>Get new Joke</button>
         <h3 style={{padding:"1rem"}}>Category: {joke.category}</h3>
         {
@@ -38,4 +37,4 @@ function Joke() {
   )
 }
 
-export default Joke
+export default Joke;

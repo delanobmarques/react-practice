@@ -6,6 +6,7 @@ const ChangeProfile = () => {
   const { setUsername } = useContext(AppContext);
   return (
     <>  
+      <p style={{marginBottom:"1rem"}}>UseContext Hook example</p>
       <input 
         type="text" 
         onChange={(e) => {

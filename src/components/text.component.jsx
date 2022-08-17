@@ -21,6 +21,7 @@ const Text = () => {
   return (
     <>
         <h1 className="header">Show/ Hide Text</h1>
+        <p style={{marginBottom:"1rem"}}>UseEffect Hook example (Lifecycles: Mount, Unmount, update)</p>
         <button 
             onClick={() => {
                 setShowText(!showText)

@@ -11,6 +11,7 @@ import NoMatch from "./pages/no-match.page";
 import Profile from "./pages/profile.page";
 import ExcusePage from "./pages/excuse.page";
 import Register from "./pages/register.page";
+import CatFact from "./pages/cat-fact.page";
 
 // create Global context 
 export const AppContext = createContext();
@@ -32,6 +33,7 @@ function App() {
             <Route path="/text" element={<Text />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/cat-fact" element={<CatFact />} />
             <Route path="/*" element={<NoMatch />} />            
             <Route path="/excuse" element={<ExcusePage />} />            
           </Routes>
