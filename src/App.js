@@ -9,16 +9,17 @@ import Text from "./components/text.component";
 import Home from "./pages/home.page";
 import NoMatch from "./pages/no-match.page";
 import Profile from "./pages/profile.page";
+import ExcusePage from "./pages/excuse.page";
 
 // create Global context 
 export const AppContext = createContext();
 
 function App() {
-  const [username, setUsername] = useState('delanomarques');
+  const [username, setUsername] = useState('delanomarques');//global state to be passed in context provider
 
   return (
     <div className="App">
-      <AppContext.Provider value={{username, setUsername}}>
+      <AppContext.Provider value={{username, setUsername}}>{/*every component inside will have access to the global state*/}
         <Router>
           <Navbar />
           <Routes>
@@ -29,7 +30,8 @@ function App() {
             <Route path="/tasklist" element={<TaskList />} />
             <Route path="/text" element={<Text />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/*" element={<NoMatch />} />
+            <Route path="/*" element={<NoMatch />} />            
+            <Route path="/excuse" element={<ExcusePage />} />            
           </Routes>
         </Router>
       </AppContext.Provider>

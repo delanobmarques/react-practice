@@ -11,6 +11,7 @@ function Navbar() {
         <Link className='navbar__item' to="/tasklist">Task List</Link>        
         <Link className='navbar__item' to="/text">Text</Link>        
         <Link className='navbar__item' to="/profile">Profile</Link>       
+        <Link className='navbar__item' to="/excuse">Excuse</Link>    
     </header>
   )
 }
