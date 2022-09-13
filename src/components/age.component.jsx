@@ -9,11 +9,11 @@ const Age = () => {
     }
 
     const decreaseAge = () => {
-        setAge( age-1 );
+        setAge( age - 1 );
     }
 
     const setToZero = () => {
-        setAge(0);
+        age===0?alert('Age is already ZERO'):setAge(0);
     }
 
   return (

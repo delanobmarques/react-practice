@@ -29,7 +29,7 @@ const Text = () => {
         >
             Show/Hide Text
         </button>
-        { showText &&   
+        { showText &&       
             <>
                 <input 
                     type="text" 
